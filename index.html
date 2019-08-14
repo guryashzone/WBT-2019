@@ -5,8 +5,104 @@
 	<body>
 		<br>
 		<br>
+		<div>
+			<form action="success.html">
+			<table cellpadding="5">
+				<tr>
+					<th colspan="2">Registration form</th>
+				</tr>
+				<tr>
+					<th>Username</th>
+					<td>
+						<input type="text" name="city" list="cities" placeholder="Enter name" required>
+					</td>
+				</tr>
+				<tr>
+					<th>Userphone</th>
+					<td>
+						<input type="number" name="phone" placeholder="Enter phone number" required>
+					</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+						<input id="gender" type="radio" name="gender" value="Male"> Male
+						<br>
+						<input type="radio" name="gender" value="female"> Female
+						<br>
+						<input type="radio" name="gender" value="oth"> Others
+					</td>
+				</tr>
+				<tr>
+					<th>Select State</th>
+					<td>
+						<select name="state">
+							<option value="1">JHARKHAND</option>
+							<option value="2">BIHAR</option>
+							<option value="3">UTTAR PRADESH</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<button>
+							Submit
+						</button>
+					</th>
+				</tr>
+			</table>
+			</form>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<form action="submit.html" method="GET" enctype="">
+				
+				<datalist id="cities">
+					<option>Jamshedpur</option>
+					<option>Delhi</option>
+					<option>Shimla</option>
+					<option>ranchi</option>
+				</datalist>
+				<br>
+				<br>
+				
+				<br>
+				<br>
+				
+				<br>
+				<br>
+				<input type="password" name="pwd" placeholder="Enter password" required>
+				<br>
+				<br>
+				
+				<br>
+				<br>
+				Married : <input type="checkbox" name="married">
+				<br>
+				<br>
+				<label for="gender">Gender : </label>
+
+				<!-- <input type="submit" value="Register"> -->
+				<br>
+				Address : 
+				<textarea name="address" cols="40" rows="5"></textarea>
+				<button>
+					Register
+				</button>
+			</form>
+		</div>
+		<br>
+		<br>
 		<!-- <table border="1" cellpadding="10" cellspacing="10"> -->
-		<table border="1" cellpadding="10">
+		<!-- <table border="1" cellpadding="10">
 			<caption>Marksheet</caption>
 			<tr>
 				<th rowspan="2">
@@ -148,6 +244,6 @@
 					<li>Car 3</li>
 				</ul>
 			</li>
-		</ol>
+		</ol> -->
 	</body>
 </html>
