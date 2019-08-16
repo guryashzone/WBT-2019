@@ -4,8 +4,125 @@
 	</head>
 	<body>
 		<br>
+		<form action="success.html" method="GET">
+			<table cellpadding="5">
+				<tr>
+					<th colspan="3">
+						Regisgtration form
+					</th>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td>:</td>
+					<td>
+						<input type="text" name="username" placeholder="Enter your name">
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>:</td>
+					<td>
+						<input type="text" list="userlist" name="useremail" placeholder="Enter your email">
+						<datalist id="userlist">
+							<option>@gmail.com</option>
+							<option>@yahoo.com</option>
+							<option>@rediffmail.com</option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td>
+						<input type="password" placeholder="Enter your pwd" name="pwd" required>
+					</td>
+				</tr>
+				<tr>
+					<td>Select city</td>
+					<td>:</td>
+					<td>
+						<select name="city">
+							<option value selected disabled>--Select City--	</option>
+							<option value="1">Jamshedpur</option>
+							<option value="2">Ranchi</option>
+							<option value="3">Delhi</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>:</td>
+					<td>
+						<input type="radio" name="gender" value="male"> Male <br>
+						<input type="radio" name="gender" value="female"> Female <br>
+						<input type="radio" name="gender" value="others"> Others	
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button name="submitBtn">
+							Submit/Register
+						</button>
+					</td>
+				</tr>	
+			</table>
+		</form>
+
+		<br>
+
+		<form action="success.html" method="GET">
+			Name : <input type="text" placeholder="Enter your name" name="useranme" required>
+			<br>
+			<br>
+			Email : <input type="email" placeholder="Enter your email" name="email" value="@gmail.com"  required>
+			<br>
+			<br>
+			PWD : <input type="password" placeholder="Enter your pwd" name="pwd" required>
+			<br>
+			<br>
+			Phone : <input type="number" placeholder="Enter phone" name="phone">
+			<br>
+			<br>
+			City : <select name="city">
+					<option value="1">Jamshedpur</option>
+					<option value="2">Ranchi</option>
+					<option value="3">Delhi</option>
+				</select>
+			<br>
+			<br>
+			Gender : <input type="radio" name="gender" value="male"> Male 
+					<input type="radio" name="gender" value="female"> Female 
+					<input type="radio" name="gender" value="others"> Others
+			<br>
+			<br>
+			Married : <input type="checkbox" name="married">
+			<br>
+			<br>
+			Address : <textarea name="address" cols="40" rows="5"></textarea>
+			<br>
+			<br>
+			<input type="submit" value="Register">
+		</form>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 		<div>
+
+
 			<form action="success.html">
 			<table cellpadding="5">
 				<tr>
@@ -90,7 +207,7 @@
 				<br>
 				<label for="gender">Gender : </label>
 
-				<!-- <input type="submit" value="Register"> -->
+				<!-- <input type="submit" value="Register">
 				<br>
 				Address : 
 				<textarea name="address" cols="40" rows="5"></textarea>
@@ -100,7 +217,7 @@
 			</form>
 		</div>
 		<br>
-		<br>
+		<br> -->
 		<!-- <table border="1" cellpadding="10" cellspacing="10"> -->
 		<!-- <table border="1" cellpadding="10">
 			<caption>Marksheet</caption>
