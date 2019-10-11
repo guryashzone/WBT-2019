@@ -1,0 +1,21 @@
+<div style="margin-left:600px;margin-top:200px">
+<button onClick="bulbOn()" >Bulb on</button>
+<img src="pic_bulboff.gif" id="bulb" height="300px"/>
+<button style="" onClick="bulbOff()">Bulb off</button>
+</div>
+<script>
+	function bulbOff(){
+		document.getElementById("bulb").src = "pic_bulbOff.gif";
+	};
+	function bulbOn(){
+		document.getElementById("bulb").src = "pic_bulbon.gif";
+	};
+	//automatic switching function
+	 // window.setInterval(function(){ 
+		// 	 document.getElementById("bulb").src = "pic_bulbon.gif"; 
+		// 	 window.setTimeout(function(){ 
+		// 		 document.getElementById("bulb").src = "pic_bulboff.gif"; 
+		// 	 },500); 
+		
+	 // },200); 
+</script>
