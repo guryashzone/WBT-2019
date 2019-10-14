@@ -6,16 +6,61 @@
 	<title>Javascript</title>
 </head>
 <body>
-	<h1>
-		<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, debitis. -->
+	<!-- <input type="text" id="input_1"> -->
+
+	<button onClick="change_text()" id="btn_1">Change</button>
+
+
+	<h1 id="heading">
+		Lorem ipsum d	olor sit amet, consectetur adipisicing elit. Sequi, debitis.
 	</h1>
 	<script>
-		var n1 = prompt("Enter a number : ");
-		if( n1 % 2 ==0  ){
-			document.write(" Even Nnumber");
-		}else{
-			document.write("Not a Even Nnumber");
+
+		function change_text(){
+			var element = document.getElementById("heading");
+
+			element.innerHTML = "Hello World";
+			element.style.color = "#aefc22";
 		}
+
+
+
+
+		function sum(a,b){
+			console.log(a+b);
+		}
+		function sum_avg(a,b,c){
+			console.log("Sum = ",a+b+c);
+			console.log("Avg = ",(a+b+c)/3);
+		}
+		/*function sum(){
+			var a,b;
+			a = 10;
+			b = 20;
+			console.log(a+b);
+		}*/
+		// for( var i=1; i<=10;i=i+1 ){
+		// 	console.log("Value of i = ",i);
+		// }
+
+		/*var n=2;
+		for( var i=1; i<=10;i=i+1 ){
+			console.log(n +" * " +i+ " = ",i*n);
+		}*/
+
+		// while( i<=10 ){
+		// 	console.log(i);
+		// 	i+=1;
+		// }
+
+		/*var i=11;
+		do{
+			console.log(i);
+			i+=1;
+		}while( i<=10 );
+*/
+
+
 
 	</script>
 </body>
