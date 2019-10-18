@@ -10,6 +10,14 @@
 	<button class="w3-btn w3-red w3-margin" onmouseout="show_modal()">
 		SHOW MODAL
 	</button>
+
+
+	<div class="w3-padding"></div>
+		<input onkeydown="calc_len()" style="width:50%" id="string_input" type="text" class="w3-margin" placeholder="Enter string to check length">
+
+		T:<button id="lenBtn" class="w3-red w3-btn">0</button>
+		A:<button id="lenBtnA" class="w3-green w3-btn">0</button>
+	</body>
 	<div class="w3-modal" id="calc_modal">
 		<div class="w3-modal-content">
 			<div class="w3-red w3-card-4 w3-large w3-padding w3-bar">
@@ -35,6 +43,17 @@
 	</div>
 
 	<script>
+		var counter = 0;
+		function calc_len(){
+			var ele = document.getElementById("string_input");
+			var btn = document.getElementById("lenBtn");
+			var btnA = document.getElementById("lenBtnA");
+			btn.innerHTML = ele.value.length;
+			var alpha = ele.value.slice(-1);
+			if( alpha.toLowerCase() == 'a' )
+				counter++;
+			btnA.innerHTML = counter
+		}
 		function show_modal(){
 			document.getElementById("calc_modal").style.display = "block";
 		}
