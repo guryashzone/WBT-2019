@@ -47,42 +47,84 @@ else if
 
 JAVASCRIPT LOGICAL OPERATORS
 ---------------------
-<!-- && -->
-<!-- || -->
-<!-- ! -->
+&&
+||
+!
 
 JAVASCRIPT FUNCTIONS
 ------------------
 <!-- var a = function name(){ code } -->
-<!-- function name(){} -->
-<!-- return -->
+function name(){}
+return
 <!-- () => {} (new in ECMAScript 6) -->
 
 JAVASCRIPT DATA STRUCTURES
 ---------------------
 <!-- Array -->
-<!-- Object -->
+	var cars = ["Saab", "Volvo", "BMW"];
+	var cars = new Array("Saab", "Volvo", "BMW");
+	Functions
+	var x = cars.length;
+	var y = cars.sort(); 
+	Example
+	var person = [];
+	person[0] = "John";
+	person[1] = "Doe";
+	person[2] = 46;
+	persion.push("Blue");
+	var x = person.length;     // person.length will return 4
+	var y = person[0];         // person[0] will return "John"
+
+Object
+	var person = {
+		firstName:"John",
+		lastName:"Doe",
+		age:50,
+		eyeColor:"blue"
+	};
+	var group = [
+		{
+			firstName:"John",
+			lastName:"Doe",
+			age:50,
+			eyeColor:"blue"
+		},
+		
+			
+			
+	];
 
 JAVASCRIPT LOOPING
 ------------------
-<!-- for -->
-<!-- while -->
-<!-- do -->
+for
+while
+do
 <!-- forEach (new in ECMA 5) -->
 
 JAVASCRIPT DOM MANIOULATION
 -------------------
-<!-- document -->
-<!-- document.getElementById("id") -->
-<!-- document.getElementById("id").innerHTML -->
-<!-- document.getElementById("id").value -->
-<!-- document.getElementById("id").src -->
-<!-- document.getElementById("id").style.color -->
-<!-- document.getElementById("id").style.backgroundColor -->
+document
+document.getElementById("id")
+document.getElementById("id").innerHTML
+document.getElementById("id").value
+document.getElementById("id").src
+document.getElementById("id").style.color
+document.getElementById("id").style.backgroundColor
+<!-- document.getElementById("id").style.display = "block" -->
+
+
+JAVASCRIPT EVENT
+----------------
+onchange 		--	An HTML element has been changed
+onclick			-- The user clicks an HTML element
+onmouseover 	--	The user moves the mouse over an HTML element
+onmouseout		-- The user moves the mouse away from an HTML element
+onkeydown 		-- The user pushes a keyboard key
+onload 			-- The browser has finished loading the page
 
 JAVASCRIPT KEYWORDS
 -------------------
-<!-- break
+break
 case
 catch
 class
@@ -115,4 +157,50 @@ void
 while
 with
 yield
- -->
+
+
+
+JAVASCRIPT STRING MANIPULATION
+-------------------
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+
+var pos = str.lastIndexOf("locate");
+var pos = str.search("locate");
+
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+var res = str.slice(-12, -6);
+var res = str.substring(7, 13);
+var res = str.substr(7, 6); //Lenght of extracted part
+
+
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+
+var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
+
+
+var str = "       Hello World!        ";
+alert(str.trim());
+
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H
+
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+
+JAVASCRIPT PRE DEFINED OBJECTS
+---------------------
+window.setInterval(function(){//code},time);
+window.setTimeout(function(){//code},time);

@@ -1,0 +1,18 @@
+body {
+	font-family:Arial;
+}
+p.header {
+	text-align:center;
+	font-size: 70px;
+	margin-bottom:20px;
+}
+.colors {
+	text-align:center;
+}
+#color_value {
+	text-align:center;
+}
+#pre_header {
+	text-align: center;
+	letter-spacing: 5px;
+}

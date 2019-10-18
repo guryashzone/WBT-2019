@@ -4,64 +4,58 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Javascript</title>
+	<link rel="stylesheet" href="css/w3.css">	
 </head>
 <body>
-	<!-- <input type="text" id="input_1"> -->
+	<button class="w3-btn w3-red w3-margin" onmouseout="show_modal()">
+		SHOW MODAL
+	</button>
+	<div class="w3-modal" id="calc_modal">
+		<div class="w3-modal-content">
+			<div class="w3-red w3-card-4 w3-large w3-padding w3-bar">
+				<div class="w3-bar-item">
+					HTML CALCULATOR
+				</div>
+				<div class="w3-bar-item w3-right w3-hover-green" onclick="close_modal()">
+					X
+				</div>
+			</div>		
+			<br>
+			<div class="w3-padding">
+				<input type="number" id="num_1" placeholder="Number 1">
+				<input type="number" id="num_2" placeholder="Number 2">
+				<button onClick="calc_sum()">
+					SUM
+				</button>
+			</div>
+			<h1 id="answer">
+				0
+			</h1>
+		</div>
+	</div>
 
-	<button onClick="change_text()" id="btn_1">Change</button>
-
-
-	<h1 id="heading">
-		Lorem ipsum d	olor sit amet, consectetur adipisicing elit. Sequi, debitis.
-	</h1>
 	<script>
-
-		function change_text(){
-			var element = document.getElementById("heading");
-
-			element.innerHTML = "Hello World";
-			element.style.color = "#aefc22";
+		function show_modal(){
+			document.getElementById("calc_modal").style.display = "block";
 		}
-
-
-
-
-		function sum(a,b){
-			console.log(a+b);
+		function close_modal(){
+			document.getElementById("calc_modal").style.display = "none";
 		}
-		function sum_avg(a,b,c){
-			console.log("Sum = ",a+b+c);
-			console.log("Avg = ",(a+b+c)/3);
+		function sum_two(a,b){
+			return (Number(a)+Number(b));
 		}
-		/*function sum(){
-			var a,b;
-			a = 10;
-			b = 20;
-			console.log(a+b);
-		}*/
-		// for( var i=1; i<=10;i=i+1 ){
-		// 	console.log("Value of i = ",i);
-		// }
-
-		/*var n=2;
-		for( var i=1; i<=10;i=i+1 ){
-			console.log(n +" * " +i+ " = ",i*n);
-		}*/
-
-		// while( i<=10 ){
-		// 	console.log(i);
-		// 	i+=1;
-		// }
-
-		/*var i=11;
-		do{
-			console.log(i);
-			i+=1;
-		}while( i<=10 );
-*/
-
-
-
+		function calc_sum(){
+			var num_1 = document.getElementById("num_1").value;
+			var num_2 = document.getElementById("num_2").value;
+			if( !num_1 ){
+				alert("Please enter number 1");
+			}
+			if( !num_2 ){
+				alert("Please enter number 2");
+			}
+			var sum = sum_two(num_1,num_2);
+			document.getElementById("answer").innerHTML = sum;
+		}
 	</script>
 </body>
 </html>
